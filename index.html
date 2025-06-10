@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rabaul Island Vibe</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: url('https://images.unsplash.com/photo-1588668803444-23c7e56f10da') no-repeat center center/cover; height: 100vh; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+    header h1 { font-size: 3em; margin: 0; }
+    nav { background-color: #333; padding: 1em; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; }
+    footer { background-color: #222; color: white; text-align: center; padding: 1em; }
+    .btn { padding: 10px 20px; background-color: #27ae60; color: white; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
+    form input, form select, form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    iframe { width: 100%; height: 300px; border: none; margin-top: 1em; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rabaul Island Vibe</h1>
+    <p>Experience the Volcano, Culture, and Sea</p>
+    <a href="#bookings" class="btn">Book Now</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#tours">Tours</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="#bookings">Bookings</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Rabaul Island Vibe offers personalized tours around the historic and beautiful locations of East New Britain, including the famous Tavurvur Volcano and rich cultural sites.</p>
+  </section>
+
+  <section id="tours">
+    <h2>Our Tours</h2>
+    <ul>
+      <li>Volcano Hike & Sulphur Springs</li>
+      <li>WWII Historical Tour</li>
+      <li>Cultural Village Experience</li>
+      <li>Island Boat Ride & Snorkeling</li>
+    </ul>
+  </section>
+
+  <section id="bookings">
+    <h2>Bookings</h2>
+    <form action="https://formspree.io/f/xzbllppz" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <select name="tour">
+        <option value="">Select Tour</option>
+        <option value="Volcano Hike">Volcano Hike</option>
+        <option value="WWII Tour">WWII Tour</option>
+        <option value="Cultural Experience">Cultural Experience</option>
+        <option value="Island Snorkeling">Island Snorkeling</option>
+      </select>
+      <input type="date" name="date" required>
+      <textarea name="message" placeholder="Additional requests or questions"></textarea>
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+    <p><strong>Email:</strong> ptamlik97@gmail.com</p>
+    <p><strong>Phone:</strong> 71991185 or 77548346</p>
+    <a href="https://www.booking.com/city/pg/rabaul.en.html" target="_blank" class="btn">Find us on Booking.com</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>We are based in Rabaul, East New Britain. Reach out any time to learn more about our tours.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.572395892115!2d152.15217407497498!3d-4.199928595755342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x68e7628c3624efed%3A0xc165a37fc0b13d2d!2sRabaul%2C%20Papua%20New%20Guinea!5e0!3m2!1sen!2sus!4v1717944191523!5m2!1sen!2sus"></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Rabaul Island Vibe. All rights reserved.
+  </footer>
+
+</body>
+</html>
