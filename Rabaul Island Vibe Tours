@@ -1,0 +1,36 @@
+# Re-running after environment reset
+
+# Google verification tag
+google_verification_tag = '<meta name="google-site-verification" content="D7AlVqQzEjJMx_PncaA1r-DW7M9x3Vqkn1JHVJllLq4" />'
+
+# Load the base HTML template
+base_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabaul Island Vibe</title>
+  <!-- Styles and other meta tags -->
+</head>
+<body>
+  <h1>Welcome to Rabaul Island Vibe!</h1>
+</body>
+</html>
+"""
+
+# Insert the verification tag after the title tag using regex
+import re
+
+updated_html = re.sub(
+    r"(<title>.*?</title>)",
+    r"\1\n  " + google_verification_tag,
+    base_html
+)
+
+# Save the updated HTML file
+output_path = "/mnt/data/index.html"
+with open(output_path, "w") as f:
+    f.write(updated_html)
+
+output_path
